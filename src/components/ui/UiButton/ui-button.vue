@@ -10,7 +10,6 @@ const props = defineProps({
 
 const buttonStyle = reactive(({
     bacground:props.background,
-    border:'solid 1px ' + props.strokeColor,
     cursor:'pointer'
 }))
 

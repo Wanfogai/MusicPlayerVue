@@ -8,15 +8,17 @@ import UiButton from '@/components/ui/UiButton/ui-button.vue';
 import { loadEnvFile } from 'process';
 
 const props = defineProps({
-    src:{type:String},
-    size:{type: String as PropType<CoverSizeEnum>, default: CoverSizeEnum.Normal}
+    src:{type:String, default: ''},
+    size:{type: String as PropType<CoverSizeEnum>,required:true}
 })
+
 
 const BigCoverStyle = reactive(({
     width: '120px',
     height: '120px',
     borderRadius: "12px",
-    backgroundColor: "#AAAAAA"
+    backgroundColor: "#AAAAAA",
+    marginRight:"20px"
 }))
 
 const BigPlayIconStyle = reactive(({
@@ -29,7 +31,8 @@ const NormalCoverStyle = reactive(({
     width: '64px',
     height: '64px',
     borderRadius: "12px",
-    backgroundColor: "#AAAAAA"
+    backgroundColor: "#AAAAAA",
+    marginRight: "10px"
 }))
 
 const NormalPlayIconStyle = reactive(({
@@ -41,7 +44,8 @@ const MiniCoverStyle = reactive(({
     width: '48px',
     height: '48px',
     borderRadius: "12px",
-    backgroundColor: "#AAAAAA"
+    backgroundColor: "#AAAAAA",
+    marginRight:"10px"
 }))
 
 const MiniPlayIconStyle = reactive(({
@@ -92,7 +96,6 @@ const currentCover = computed<CoverConfigInterface>(()=>{
 }
 
 .play-icon{
-    background-color: transparent;
     position: relative;
 }
 

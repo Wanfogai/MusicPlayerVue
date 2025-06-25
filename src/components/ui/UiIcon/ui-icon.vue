@@ -12,3 +12,9 @@ const icon = require('@/app/assets/icons/' + props.type + '.svg')
 <template>
     <img :src="icon" alt="icon">
 </template>
+
+<style lang="scss" scoped>
+img{
+    background-color: transparent;
+}
+</style>
