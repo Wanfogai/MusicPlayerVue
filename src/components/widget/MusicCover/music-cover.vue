@@ -20,8 +20,8 @@ const BigCoverStyle = reactive(({
 }))
 
 const BigPlayIconStyle = reactive(({
-    bottom: '40px',
-    left:'-35px'
+    bottom: '48px',
+    left:'4px'
     
 }))
 
@@ -33,8 +33,8 @@ const NormalCoverStyle = reactive(({
 }))
 
 const NormalPlayIconStyle = reactive(({
-    bottom: '28px',
-    left: '-13px'
+    bottom: '36px',
+    left: '4px'
 }))
 
 const MiniCoverStyle = reactive(({
@@ -45,8 +45,8 @@ const MiniCoverStyle = reactive(({
 }))
 
 const MiniPlayIconStyle = reactive(({
-    bottom: '20px',
-    left: '-9px'
+    bottom: '28px',
+    left: '4px'
     
 }))
 
@@ -78,22 +78,17 @@ const currentCover = computed<CoverConfigInterface>(()=>{
 <template>
         <UiButton class="cover-body" :style="currentCover.CoverStyle">
             <div class="cover-container" >
-                <img :src="props.src" alt="" class="cover-image">
+                <img :src="props.src" alt="Cover Image" class="cover-image">
                 <UiIcon :type="currentCover.playIconSize" class="play-icon" :style="currentCover.PlayIconStyle" />
             </div>
         </UiButton>
-    
 </template>
 
 <style lang="scss" scoped>
 
 .cover-body{
+    overflow: hidden;
     user-select: none;
-    display: flex;
-}
-
-.cover-container{
-    background: none;
 }
 
 .play-icon{
@@ -104,8 +99,6 @@ const currentCover = computed<CoverConfigInterface>(()=>{
 .cover-image{
     max-width: 100%;
     height: auto;
-    border-radius: 12px;
-    border: 2px var(--strokeColor);
     background-color: transparent;
 }
 </style>

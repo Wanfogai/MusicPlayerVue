@@ -13,7 +13,7 @@ const image = require("/src/app/assets/images/solid-color-image.jpeg")
 <template>
 <SearchBar v-model="SearchSong"></SearchBar>
 
-<MusicCover :size="CoverSizeEnum.Mini" :src="image"/>
+<MusicCover :size="CoverSizeEnum.Big" :src="image"/>
 
  <UiButton v-for="types in IconTypeEnum">
     <UiIcon :type="types" />

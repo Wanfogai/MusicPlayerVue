@@ -21,7 +21,8 @@ const emit = defineEmits<{
 
 </script>
 <template>
-    <div :style="buttonStyle" @click="emit('click',$event)">
+    <div :style="buttonStyle" class="button-container" 
+                @click="emit('click',$event)">
         <slot />
     </div>
 </template>
