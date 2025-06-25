@@ -13,19 +13,17 @@ const props  = defineProps({
 </script>
 
 <template>
-    <UiButton>
-        <div class="card-body">
+    <UiButton class="card-body">
             <div class="cover-container">
                 <MusicCover :size="coverSize" :src="trackData?.cover"/>
             </div>
             <div class="info-container">
                 <div class="track-info">
-                    <span class="track-name">{{trackData?.trackName}}</span>
-                    <span class="track-author">{{trackData?.trackAuthor}}</span>
+                    <span class="h1">{{trackData?.trackName}}</span>
+                    <span class="h2-seccond">{{trackData?.trackAuthor}}</span>
                 </div>
                 <div class="decor-line"></div>
             </div>
-        </div>
     </UiButton>
 </template>
 
