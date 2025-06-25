@@ -1,0 +1,6 @@
+export {default as AudioPlayer} from './AudioPlayer.vue'
+export {default as CategoryPanel} from './CategoryPanel.vue'
+export {default as RecommendedPanel} from './RecommendedPanel.vue'
+export {default as MusicCover} from './MusicCover/music-cover.vue'
+export {default as SearchBar} from './SearchBar.vue'
+export {default as TrackCard} from './TrackCard.vue'

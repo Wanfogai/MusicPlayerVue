@@ -1,0 +1,28 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #181818;
+    
+}
+
+:root{
+    --backgroundMainColor : #181818;
+    --backgoundSecondColor : #202020;
+    --actientColor : #1DB954;
+    --fontMainColor : #FFFFFF;
+    --fontSecondColor : #AAAAAA;
+    --strokeColor : #333333;
+    --strokeRadius: 12px;
+
+}
+
+body{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+img {
+    pointer-events: none;
+}
